@@ -12,6 +12,9 @@ public class EnemyStat : MonoBehaviour
         HP -= x;
         if (HP <= 0)
         {
+            EnemySpawner.enemiesAlive--;
+            LevelManager.Score += 10;
+            LevelManager.Money += 10;
             Destroy(gameObject);
         }
     }
