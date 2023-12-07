@@ -18,6 +18,6 @@ public class EchapMenu : MonoBehaviour
     public void Resume()
     {
         canvas.enabled = false;
-        Debug.Log("Resume");
+        Time.timeScale = 1;
     }
 }

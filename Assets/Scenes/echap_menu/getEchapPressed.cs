@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
@@ -14,6 +15,6 @@ public class getEchapPressed : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             echap_menu.enabled = !echap_menu.enabled;
-        }
+            Time.timeScale = Convert.ToInt32(!echap_menu.enabled);        }
     }
 }
