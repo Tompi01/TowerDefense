@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class EnemySpawner : MonoBehaviour
 {
+
+    public static EnemySpawner main;
 
     [Header("References")]
     [SerializeField] private GameObject[] enemyPrefabs;
@@ -24,6 +27,9 @@ public class EnemySpawner : MonoBehaviour
     private int enemiesAlive;
     private int enemiesLeftToSpawn;
     private bool isSpawning = false;
+    private int rdn;
+    //public Dictionary<GameObject, int> InPath;
+    public IDictionary<GameObject, int> objetsuper = new Dictionary<GameObject, int>();
 
     private void Awake()
     {
@@ -34,10 +40,12 @@ public class EnemySpawner : MonoBehaviour
     private void Start()
     {
         StartCoroutine(StartWave());
+        main = this;
     }
 
     private void Update()
     {
+        rdn = Random.Range(0, 9999);
         if (!isSpawning) return;
         timeSinceLastSpawn += Time.deltaTime;
         if (timeSinceLastSpawn >= (1f / enemiesPerSecond) && enemiesLeftToSpawn > 0){
@@ -77,9 +85,18 @@ public class EnemySpawner : MonoBehaviour
 
     private void SpawnEnemy()
     {
-        GameObject prefabsToSpawn = enemyPrefabs[0];
-        Instantiate(prefabsToSpawn, LevelManager.main.StartPoint.position, Quaternion.identity);
 
+        GameObject prefabsToSpawn = enemyPrefabs[0];
+        int i=0;
+        prefabsToSpawn.name = rdn.ToString();
+        foreach(var startpoint in LevelManager.main.path)
+        {
+            var e = Instantiate(prefabsToSpawn.gameObject, startpoint.Key.position, Quaternion.identity);
+            objetsuper.Add(e, i);
+            Debug.Log(objetsuper);
+
+            i++;
+        }
     }
 
     private int enemiesPerWaves()
