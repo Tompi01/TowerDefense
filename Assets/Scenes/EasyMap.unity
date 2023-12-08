@@ -256,7 +256,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_Name
-      value: Points (1)
+      value: EasyPoints (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -457,7 +457,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_Name
-      value: Points (5)
+      value: EasyPoints (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2899,7 +2899,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_Name
-      value: Points (4)
+      value: EasyPoints (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2956,7 +2956,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_Name
-      value: Points (7)
+      value: EasyPoints (7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3023,7 +3023,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_Name
-      value: Points (3)
+      value: EasyPoints (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3080,7 +3080,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_Name
-      value: Points (2)
+      value: EasyPoints (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17646,7 +17646,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_Name
-      value: Points (9)
+      value: EasyPoints (9)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17708,7 +17708,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_Name
-      value: Points
+      value: EasyPoints
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17847,7 +17847,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_Name
-      value: Points (6)
+      value: EasyPoints (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18001,7 +18001,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_Name
-      value: Points (8)
+      value: EasyPoints (8)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

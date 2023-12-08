@@ -178,7 +178,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_Name
-      value: PointsD
+      value: SSPointsD
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -235,7 +235,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_Name
-      value: PointsB (1)
+      value: SSPointsB (1)
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_IsActive
@@ -454,7 +454,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_Name
-      value: PointsB (3)
+      value: SSPointsB (3)
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_IsActive
@@ -515,7 +515,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_Name
-      value: PointsB (4)
+      value: SSPointsB (4)
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_IsActive
@@ -581,7 +581,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_Name
-      value: PointsC (2)
+      value: SSPointsC (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -928,7 +928,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_Name
-      value: Points (2)
+      value: SSPoints (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -990,7 +990,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_Name
-      value: PointsD (2)
+      value: SSPointsD (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1136,7 +1136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_Name
-      value: PointsC
+      value: SSPointsC
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5425,7 +5425,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_Name
-      value: Points (4)
+      value: SSPoints (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5482,7 +5482,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_Name
-      value: Points
+      value: SSPoints
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5539,7 +5539,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_Name
-      value: Points (5)
+      value: SSPoints (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5683,7 +5683,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_Name
-      value: Points (6)
+      value: SSPoints (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5740,7 +5740,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_Name
-      value: Points (8)
+      value: SSPoints (8)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5812,7 +5812,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_Name
-      value: PointsB
+      value: SSPointsB
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_IsActive
@@ -5878,7 +5878,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_Name
-      value: PointsB (2)
+      value: SSPointsB (2)
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_IsActive
@@ -5939,7 +5939,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_Name
-      value: PointsD (1)
+      value: SSPointsD (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6085,7 +6085,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_Name
-      value: Points (7)
+      value: SSPoints (7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24505,7 +24505,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_Name
-      value: Points (1)
+      value: SSPoints (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24646,7 +24646,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_Name
-      value: PointsC (1)
+      value: SSPointsC (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24703,7 +24703,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_Name
-      value: Points (3)
+      value: SSPoints (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

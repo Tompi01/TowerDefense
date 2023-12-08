@@ -179,10 +179,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefabs:
   - {fileID: 6367797302393883188, guid: 211e255f4b7072d4b8d2c5feaf20bb38, type: 3}
-  baseEnemies: 8
+  baseEnemies: 2
   enemiesPerSecond: 0.5
   timeBetweenWaves: 5
   difficultyScalingFactor: 0.75
+  enemiesAlive: 0
+  enemiesLeftToSpawn: 0
 --- !u!114 &127568221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -296,7 +298,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_Name
-      value: Points (3)
+      value: MediumPoints (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1479,7 +1481,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_Name
-      value: Points (2)
+      value: MediumPoints (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1782,7 +1784,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_Name
-      value: Points (1)
+      value: MediumPoints (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3664,7 +3666,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820420791182810149, guid: 2abb0bd6d9b3844b19601ea1b776c30b, type: 3}
       propertyPath: m_Name
-      value: Points
+      value: MediumPoints
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

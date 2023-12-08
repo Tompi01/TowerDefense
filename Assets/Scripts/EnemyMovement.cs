@@ -18,7 +18,6 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField]
     private SpriteRenderer sprite;
     private Transform[] _currentPath;
-    private int _actualpath;
 
     private void Start()
     {
@@ -41,8 +40,11 @@ public class EnemyMovement : MonoBehaviour
 
             if (pathIndex == _currentPath.Length)
             {
+                EnemySpawner.main.objetsuper.Remove(gameObject);
                 EnemySpawner.onEnemyDestroy.Invoke();
                 Destroy(gameObject);
+                EnemySpawner.main.enemiesAlive--;
+                Debug.Log("Mort");
                 return;
            }
             else
