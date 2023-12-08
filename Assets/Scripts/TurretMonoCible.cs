@@ -26,13 +26,13 @@ public class TurretMonoCible : MonoBehaviour
     {
         listEnemy.Add(col.gameObject);
 
-        print("Un objet est rentré");
+       // print("Un objet est rentré");
     }
 
     void OnTriggerExit2D(Collider2D col)
     {
         listEnemy.Remove(col.gameObject);
-        print("Un objet est sortie");
+       // print("Un objet est sortie");
     }
 
     void Start()
@@ -72,7 +72,7 @@ public class TurretMonoCible : MonoBehaviour
             Debug.DrawRay(transform.position, dir, Color.red, 0.05f);
 
             listEnemy[0].GetComponent<EnemyStat>().TakeDamage(doneDammage);
-            Debug.Log(this.name + " à toucher une cibles !");
+            //Debug.Log(this.name + " à toucher une cibles !");
         }
     }
 
