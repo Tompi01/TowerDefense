@@ -101,7 +101,7 @@ MonoBehaviour:
   Range: {fileID: 2883700246435718839}
   listEnemy: []
   intervalScan: 0.5
-  doneDammage: 5
+  doneDammage: 20
 --- !u!58 &2883700246435718839
 CircleCollider2D:
   m_ObjectHideFlags: 0
