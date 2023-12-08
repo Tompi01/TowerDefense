@@ -17,6 +17,7 @@ public class LevelManager : MonoBehaviour
     public TMP_Text score;
     public TMP_Text live;
     public TMP_Text money;
+    public TMP_Text tWave;
 
     public static LevelManager main;
 
@@ -25,7 +26,17 @@ public class LevelManager : MonoBehaviour
 
     [SerializeField]
     public NewDict newDict;
-    
+
+    [SerializeField]
+    private Canvas __GameOver;
+
+    private void Start()
+    {
+        Score = 0;
+        Live = 200;
+        Money = 300;
+    }
+
     private void Awake()
     {
         path = newDict.dico();
@@ -37,10 +48,11 @@ public class LevelManager : MonoBehaviour
         score.text = "Score : " + Score.ToString("n0");
         live.text = "Vie : " + Live.ToString("n0");
         money.text = "Money : " + Money.ToString("n0");
+        tWave.text = "Vague : " + EnemySpawner.main.currentWave;
 
         if(Live <= 0)
         {
-            SceneManager.LoadScene("Scenes/Lobby/lobby");
+            __GameOver.enabled = true;
         }
 
 

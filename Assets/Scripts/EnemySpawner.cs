@@ -22,7 +22,7 @@ public class EnemySpawner : MonoBehaviour
     public static UnityEvent onEnemyDestroy = new UnityEvent();
 
 
-    private int currentWave = 1;
+    public int currentWave = 1;
     private float timeSinceLastSpawn;
     public int enemiesAlive = 0;
     public int enemiesLeftToSpawn;
@@ -39,6 +39,7 @@ public class EnemySpawner : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 1;
         StartCoroutine(StartWave());
         main = this;
     }
@@ -65,6 +66,13 @@ public class EnemySpawner : MonoBehaviour
         if (enemiesAlive <= 0 && enemiesLeftToSpawn <= 0)
         {
             EndWave();
+        }
+
+        if(currentWave >= 5)
+        {
+            Leave();
+            LevelManager.Live = 0;
+            Time.timeScale = 0;
         }
     }
 
