@@ -9,7 +9,6 @@ public class EchapMenu : MonoBehaviour
     private void Start()
     {
         canvas = GetComponent<Canvas>();
-        Debug.Log(EnemySpawner.main.enemiesAlive);
     }
 
     public void GotoMenu()

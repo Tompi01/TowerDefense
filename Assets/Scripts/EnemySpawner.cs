@@ -33,14 +33,12 @@ public class EnemySpawner : MonoBehaviour
 
     private void Awake()
     {
-        EndWave();
         StartCoroutine(StartWave());
     }
 
 
     private void Start()
     {
-        EndWave();
         StartCoroutine(StartWave());
         main = this;
     }
@@ -91,6 +89,7 @@ public class EnemySpawner : MonoBehaviour
         isSpawning = false;
         timeSinceLastSpawn = 0f;
         currentWave++;
+        LevelManager.Money += 75;
         StartCoroutine(StartWave());
     }
 
@@ -104,8 +103,6 @@ public class EnemySpawner : MonoBehaviour
         {
             var e = Instantiate(prefabsToSpawn.gameObject, startpoint.Key.position, Quaternion.identity);
             objetsuper.Add(e, i);
-            Debug.Log(objetsuper);
-
             i++;
         }
     }

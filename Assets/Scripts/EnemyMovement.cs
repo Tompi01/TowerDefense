@@ -42,9 +42,9 @@ public class EnemyMovement : MonoBehaviour
             {
                 EnemySpawner.main.objetsuper.Remove(gameObject);
                 EnemySpawner.onEnemyDestroy.Invoke();
+                LevelManager.Live -= 10;
                 Destroy(gameObject);
                 EnemySpawner.main.enemiesAlive--;
-                Debug.Log("Mort");
                 return;
            }
             else

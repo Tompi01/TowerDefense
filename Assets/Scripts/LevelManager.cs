@@ -4,9 +4,19 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
+
+    public static float Score = 0;
+    public static float Live = 200;
+    public static float Money = 300;
+
+    public TMP_Text score;
+    public TMP_Text live;
+    public TMP_Text money;
 
     public static LevelManager main;
 
@@ -20,6 +30,21 @@ public class LevelManager : MonoBehaviour
     {
         path = newDict.dico();
         main = this;
+    }
+
+    private void Update()
+    {
+        score.text = "Score : " + Score.ToString("n0");
+        live.text = "Vie : " + Live.ToString("n0");
+        money.text = "Money : " + Money.ToString("n0");
+
+        if(Live <= 0)
+        {
+            SceneManager.LoadScene("Scenes/Lobby/lobby");
+        }
+
+
+        Score += 1 * Time.deltaTime;
     }
 
 
