@@ -5161,7 +5161,7 @@ MonoBehaviour:
       - {fileID: 2133310362}
       - {fileID: 1256081355}
       - {fileID: 1836592207}
-  __GameOver: {fileID: 0}
+  __GameOver: {fileID: 3443604641283383332}
 --- !u!114 &1619317856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19930,6 +19930,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d1e895b4d6902a4e8001251c5188a26, type: 3}
+--- !u!223 &3443604641283383332 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 2645541601305690626, guid: 7d1e895b4d6902a4e8001251c5188a26, type: 3}
+  m_PrefabInstance: {fileID: 3443604641283383331}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3875206777027638251
 PrefabInstance:
   m_ObjectHideFlags: 0

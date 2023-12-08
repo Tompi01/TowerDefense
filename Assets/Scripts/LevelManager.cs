@@ -28,7 +28,7 @@ public class LevelManager : MonoBehaviour
     public NewDict newDict;
 
     [SerializeField]
-    private Canvas __GameOver;
+    public Canvas __GameOver;
 
     private void Start()
     {

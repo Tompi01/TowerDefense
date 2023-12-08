@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -19,5 +20,6 @@ public class interact : MonoBehaviour
         StopCoroutine(EnemySpawner.main.StartWave());
         EnemySpawner.main.Leave();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        LevelManager.main.__GameOver.enabled = true;
     }
 }

@@ -17,7 +17,6 @@ public class TurretMonoCible : MonoBehaviour
     [SerializeField] public float intervalScan = 1f;
 
     [SerializeField] public float doneDammage = 1f;
-
     
 
 
@@ -38,6 +37,7 @@ public class TurretMonoCible : MonoBehaviour
     void Start()
     {
         InvokeRepeating("Dommage", 0f, intervalScan);
+        gameObject.GetComponent<Animator>().SetBool("turret_fire_0", false);
     }
 
     void Update()
@@ -70,9 +70,12 @@ public class TurretMonoCible : MonoBehaviour
         {
             Vector3 dir = listEnemy[0].transform.position - transform.position;
             Debug.DrawRay(transform.position, dir, Color.red, 0.05f);
-
+            gameObject.GetComponent<Animator>().SetBool("turret_fire_0", true);
             listEnemy[0].GetComponent<EnemyStat>().TakeDamage(doneDammage);
             Debug.Log(this.name + " à toucher une cibles !");
+        } else
+        {
+            gameObject.GetComponent<Animator>().SetBool("turret_fire_0" , false);
         }
     }
 
