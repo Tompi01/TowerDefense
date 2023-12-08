@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
@@ -16,10 +17,17 @@ public class EnemyMovement : MonoBehaviour
 
     [SerializeField]
     private SpriteRenderer sprite;
+    private Transform[] _currentPath;
 
     private void Start()
     {
-        target = LevelManager.main.path[pathIndex];
+        int i = 0;
+        foreach (var points in LevelManager.main.path)
+        {
+            _currentPath = LevelManager.main.path.ElementAt(EnemySpawner.main.objetsuper[gameObject]).Value;
+            i++;
+        }
+        target = _currentPath[pathIndex];
     }
 
 
@@ -30,15 +38,25 @@ public class EnemyMovement : MonoBehaviour
             pathIndex++;
 
 
-            if (pathIndex == LevelManager.main.path.Length)
+            if (pathIndex == _currentPath.Length)
             {
+                EnemySpawner.main.objetsuper.Remove(gameObject);
                 EnemySpawner.onEnemyDestroy.Invoke();
                 Destroy(gameObject);
+                EnemySpawner.main.enemiesAlive--;
+                Debug.Log("Mort");
                 return;
-            }
+           }
             else
             {
-                target = LevelManager.main.path[pathIndex];
+                int i = 0;
+                foreach (var points in LevelManager.main.path)
+                {
+                    
+                    _currentPath = LevelManager.main.path.ElementAt(EnemySpawner.main.objetsuper[gameObject]).Value;
+                    i++;
+                }
+                    target = _currentPath[pathIndex];
             }
 
             
