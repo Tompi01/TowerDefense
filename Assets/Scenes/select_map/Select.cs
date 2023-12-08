@@ -7,6 +7,6 @@ public class Select : MonoBehaviour
 {
    public void launchMap(string s_map)
     {
-        SceneManager.LoadScene(s_map, LoadSceneMode.Single);
+        SceneManager.LoadScene(s_map);
     }
 }

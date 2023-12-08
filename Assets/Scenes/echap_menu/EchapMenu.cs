@@ -8,11 +8,16 @@ public class EchapMenu : MonoBehaviour
     Canvas canvas;
     private void Start()
     {
-        canvas = GetComponent<Canvas>();       
+        canvas = GetComponent<Canvas>();
+        Debug.Log(EnemySpawner.main.enemiesAlive);
     }
+
     public void GotoMenu()
     {
-        SceneManager.LoadScene("Scenes/Lobby/lobby", LoadSceneMode.Single);
+        Time.timeScale = 1;
+        StopCoroutine(EnemySpawner.main.StartWave());
+        EnemySpawner.main.Leave();
+        SceneManager.LoadScene("Scenes/Lobby/lobby");
     }
    
     public void Resume()

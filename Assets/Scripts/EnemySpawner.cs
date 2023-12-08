@@ -24,8 +24,8 @@ public class EnemySpawner : MonoBehaviour
 
     private int currentWave = 1;
     private float timeSinceLastSpawn;
-    private int enemiesAlive;
-    private int enemiesLeftToSpawn;
+    public int enemiesAlive = 0;
+    public int enemiesLeftToSpawn;
     private bool isSpawning = false;
     private int rdn;
     //public Dictionary<GameObject, int> InPath;
@@ -33,14 +33,23 @@ public class EnemySpawner : MonoBehaviour
 
     private void Awake()
     {
-        onEnemyDestroy.AddListener(enemyDestroyed);
+        EndWave();
+        StartCoroutine(StartWave());
     }
 
 
     private void Start()
     {
+        EndWave();
         StartCoroutine(StartWave());
         main = this;
+    }
+
+    public void Leave()
+    {
+        currentWave = 0;
+        EndWave();
+
     }
 
     private void Update()
@@ -55,7 +64,7 @@ public class EnemySpawner : MonoBehaviour
             timeSinceLastSpawn = 0f;
         }
 
-        if (enemiesAlive == 0 && enemiesLeftToSpawn == 0)
+        if (enemiesAlive <= 0 && enemiesLeftToSpawn <= 0)
         {
             EndWave();
         }
@@ -68,15 +77,17 @@ public class EnemySpawner : MonoBehaviour
 
 
 
-    private IEnumerator StartWave()
+    public IEnumerator StartWave()
     {
         yield return new WaitForSeconds(timeBetweenWaves);
         isSpawning = true;
         enemiesLeftToSpawn = enemiesPerWaves();
     }
 
-    private void EndWave()
+    public void EndWave()
     {
+        enemiesAlive = 0;
+        enemiesLeftToSpawn = 0;
         isSpawning = false;
         timeSinceLastSpawn = 0f;
         currentWave++;
